@@ -1,12 +1,11 @@
 ﻿using System;
 
-class program 
+public class Class1
 {
-	static void Main(string []args)
-	{
-        foreach (var arg in args)
-        {
-            Console.WriteLine(arg);
-        }
+    public Class1()
+    {
+        Program program = new Program();
+        program.s1 = "Hello from Class1!";
+        Console.WriteLine(program.s1); // Output appears if this runs
     }
 }
