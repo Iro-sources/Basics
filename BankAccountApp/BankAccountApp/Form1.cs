@@ -61,6 +61,16 @@ namespace BankAccountApp
             BankAccountsGrid.DataSource = null;
             BankAccountsGrid.DataSource = BankAccounts;
         }
+
+
+        private void DepositBtn_Click(object sender, EventArgs e)
+        {
+            BankAccountsGrid.DataSource = null;
+            BankAccountsGrid.DataSource = BankAccounts;
+
+
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 

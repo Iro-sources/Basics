@@ -5,6 +5,42 @@ class Program{
 
     public static void Main(string[] args) {
 
+        //user input for sum of two numbers
+        Console.WriteLine("Enter a number: ");
+        int a = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter a number: ");
+        int b = int.Parse(Console.ReadLine());
+        int sum = a + b;
+        Console.WriteLine("the sum of: " + a + " and " + b + " is : " + sum);
+
+        /*Write a program that:
+         Loops from 1 to 50
+         For each number:
+         Prints whether it's even or odd
+         Every 10 numbers, prints a divider line
+         Bonus: Format the output nicely
+*/
+        int number;
+        int LineCounter = 0;
+
+        for (number = 1; number <= 50; number ++)
+        {
+            if(number % 2 == 0)
+            {
+                Console.WriteLine(number + " Even");
+            }
+            else{
+                Console.WriteLine(number + " Odd");
+            }
+
+            LineCounter++;
+            if (LineCounter == 10) {
+                Console.WriteLine("---------------");
+                LineCounter = 0;
+            }
+            
+        }
         // ask the user to enter their height in cm.
         Console.WriteLine("Enter your height in Cm: ");
         //Read the height as a string from the console.
